@@ -77,6 +77,31 @@
                         <p id="texto1"></p>
                     </div>
                 </div>
+                <div class="col-auto d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuevoVehiculoLabelModal">
+                        Nuevo Vehiculo
+                      </button>
+                </div>
+                <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+                    <table class="table table-striped table-responsive" id="vehiculos">
+                        <thead>
+                            <tr>
+                                <th scope="col">Placa</th>
+                                <th scope="col">Marca </th>
+                                <th scope="col">Kilomeraje </th>
+                                <th scope="col">Ingreso Vehiculo</th>
+                                <th scope="col">Diagnostico Vehiculos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <p id="texto1"></p>
+                </div>
+                </div>
+            </div>
 
 
             </div>
@@ -114,6 +139,48 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-primary" id="nuevoUsuario">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="nuevoVehiculoLabelModal" tabindex="-1" aria-labelledby="nuevoVehiculoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="nuevoVehiculoLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="placa" class="form-label">Placa</label>
+                        <input type="text" class="form-control" id="placa">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="marca" class="form-label">Marca</label>
+                        <input type="text" class="form-control" id="marca">
+                    </div>
+                    <div class="mb-3">
+                        <label for="linea" class="form-label">Linea</label>
+                        <input type="text" class="form-control" id="linea">
+                    </div>
+                    <div class="mb-3">
+                        <label for="IngresoVehiculos" class="form-label">Ingreso Vehiculo</label>
+                        <input type="date" class="form-control" id="IngresoVehiculos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="DiagnosticoVehiculo" class="form-label">Diagnostico Vehiculo</label>
+                        <input type="text" class="form-control" id="DiagnosticoVehiculo">
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="nuevoVehiculo">Guardar</button>
             </div>
         </div>
     </div>
