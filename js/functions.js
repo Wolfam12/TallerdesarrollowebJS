@@ -17,3 +17,13 @@ $("#nuevoVehiculo").click(function() {
     $('#vehiculos tr:last').after('<tr><td>' + placa + '</td><td>' + marca + '</td></td> '+'</td><td>' + linea + '</td></td>'+'</td><td>' + IngresoVehiculos + '</td></td>'+'</td><td>' + DiagnosticoVehiculo + '</td></tr>'); //agrega un nuevo registro a la tabla, después del último tr
       $('#nuevoVehiculoLabelModal').modal('toggle'); //cierra el modal
 });
+
+$("#nuevoRepuesto").click(function() {
+    var repuesto = $("#repuesto").val(); //capturar el valor del campo con id nombre
+    var marcaVehiculo = $("#marcaVehiculo").val(); //capturar el valor del campo con id identificacion
+    var modelo = $("#modelo").val(); //capturar el valor del campo con id identificacion
+    var cantidad = $("#cantidad").val(); //capturar el valor del campo con id identificacion
+    
+    $('#repuestos tr:last').after('<tr><td>' + repuesto + '</td><td>' + marcaVehiculo + '</td></td> '+'</td><td>' + modelo + '</td></td>'+'</td><td>' + cantidad + '</td></tr>'); //agrega un nuevo registro a la tabla, después del último tr
+    $('#nuevoRepuestoLabelModal').modal('toggle'); //cierra el modal
+});
