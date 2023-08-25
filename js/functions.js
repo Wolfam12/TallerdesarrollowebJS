@@ -27,3 +27,13 @@ $("#nuevoRepuesto").click(function() {
     $('#repuestos tr:last').after('<tr><td>' + repuesto + '</td><td>' + marcaVehiculo + '</td></td> '+'</td><td>' + modelo + '</td></td>'+'</td><td>' + cantidad + '</td></tr>'); //agrega un nuevo registro a la tabla, después del último tr
     $('#nuevoRepuestoLabelModal').modal('toggle'); //cierra el modal
 });
+
+$("#nuevoempleado").click(function() {
+    var nombre = $("#nombre1").val(); //capturar el valor del campo con id nombre
+    var identificacion = $("#identificacion1").val(); //capturar el valor del campo con id identificacion
+    var Cargo = $("#cargo").val(); //capturar el valor del campo con id identificacion
+    var IngresoPersona = $("#fecha1").val(); //capturar el valor del campo con id identificacion
+    
+    $('#empleado tr:last').after('<tr><td>' + nombre + '</td><td>' + identificacion + '</td></td> '+'</td><td>' + Cargo + '</td></td>'+'</td><td>' + IngresoPersona + '</td></tr>'); //agrega un nuevo registro a la tabla, después del último tr
+    $('#nuevoEmpleadoModal').modal('toggle'); //cierra el modal
+});
